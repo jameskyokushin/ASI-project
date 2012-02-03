@@ -4,6 +4,7 @@ gem 'rails', '3.2.0'
 
 group :development, :test do
   gem "sqlite3"
+	gem 'devise', '~> 1.4.3'
 end
 
 group :production do
