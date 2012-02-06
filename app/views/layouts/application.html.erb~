@@ -17,7 +17,6 @@
 			</article>
 				<%= render "layouts/sidebar" %>
 		</article-container>		
-			<%= render "layouts/footer" %>
 </container>
 </body>
 </html>

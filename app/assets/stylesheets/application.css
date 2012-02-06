@@ -50,6 +50,16 @@ a:visited {
 }
 
 /*-- LOGIN--*/
+.login-in {
+	margin-right: auto;
+	margin-left: auto;
+}
+.login-page {
+	width: 100%;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .logo-container {
 	display: block;

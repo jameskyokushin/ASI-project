@@ -19,6 +19,7 @@ body {
 	background-color: #F2F2F2;
 	font-family: Geneva, Arial, Helvetica, sans-serif;
 	color:  #666666;
+	font-size: 14px;
 }
 container {
 	width: 100%;
@@ -49,6 +50,16 @@ a:visited {
 }
 
 /*-- LOGIN--*/
+.login-in {
+	margin-right: auto;
+	margin-left: auto;
+}
+.login-page {
+	width: 100%;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .logo-container {
 	display: block;
