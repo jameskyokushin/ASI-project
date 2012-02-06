@@ -1,0 +1,18 @@
+
+<div class="menu">
+	<div class="menu_title">Main menu</div>
+		<ul>
+			<li><a href="#" class="menu_link">About me</a></li>
+			<li><a href="#" class="menu_link">Contact me</a></li>
+		</ul>
+	<div class="menu_title">Sub menu</div>
+		<ul>
+			<li><a href="http://www.pikanai.com" class="menu_link">Pikanai</a></li>
+		</ul>
+	<div class="menu_title">Friends</div>
+		<ul>
+			<li><a href="http://www.oswd.org" class="menu_link">OSWD</a></li>
+			<li><a href="http://www.opendesigns.org" class="menu_link">Open Designs</a></li>
+		</ul>
+</div>
+

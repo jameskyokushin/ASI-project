@@ -1,2 +1,5 @@
-ERP::Application.routes.draw do	root :to => "pages#index"
+ERP::Application.routes.draw do	
+	get "pages#home"
+  devise_for :users
+	root :to => "pages#home"
 end

@@ -1,0 +1,15 @@
+<header>
+	<div class="logo-container">
+		<%= image_tag("bgbgbg.png", :alt => "ASI LOGO", :class => "round") %>
+	</div>
+		<login>		
+			<ul>
+					<% if user_signed_in? %>
+				<li>Signed in as <%= current_user.email %></li>
+				<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+					<% else %>
+				<li><%= link_to "Login", new_user_session_path %></li>
+					<% end %>
+			</ul>
+		</login>
+</header>

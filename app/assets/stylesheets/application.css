@@ -11,4 +11,148 @@
  *= require_self
  *= require_tree .
 */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #F2F2F2;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color:  #666666;
+}
+container {
+	width: 100%;
+	display: block;
+}
+
+header {
+	padding-left: 20px;
+	padding-top: 10px;
+	height: 80px;
+	display: block;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+/*-- LOGIN--*/
+
+.logo-container {
+	display: block;
+	width: 100%;
+	height: 55px;
+}
+
+login {
+  float: right;
+}
+
+login {
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+login ul {
+  margin: 0;
+  padding: 0;
+}
+
+login ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+login ul li a {
+  padding: 0 5px;
+  font-weight: normal;
+}
+
+login ul li a:visited {
+  color: #09c;
+}
+
+login ul li a:hover {
+  text-decoration: underline;
+}
+article-container {
+	display: block;
+	height: 100%;
+}
+
+article {
+	background-color: white;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.content {
+	margin: 0 24px;
+}
+sidebar, article {
+	min-height: 500px;
+}
+
+footer {
+	clear: both;
+	background-color: green;
+	
+}
+/* --- SIDEBAR --- */
+
+sidebar {
+	right: 0;
+	position: absolute;
+	display: block;
+	width: 200px;
+	background-color: clear;
+}
+
+sidebar {
+  float: right;
+}
+
+sidebar {
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+sidebar ul li {
+  list-style-type: none;
+  display: block;
+  padding: 0.2em 0;
+	margin-left: 12px;
+}
+
+siderbar ul li a {
+  padding: 0 5px;
+  font-weight: normal;
+}
+
+sidebar ul li a:visited {
+  color: #09c;
+}
+
+sidebar ul li a:hover {
+  text-decoration: underline;
+}
 
