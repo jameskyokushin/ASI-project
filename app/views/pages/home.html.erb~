@@ -1,3 +1,19 @@
-	<%= render "layouts/sidebar" %>
-<h1>Welcome Pages</h1>
+<%= render "layouts/sidebar" %>
+<h1>ASI Welcome Pages</h1>
+<p>Frequently Ask Questions</p>
+
+<ul>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>	
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>	
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+	<li><%= link_to "How To DO", '#' %></li>
+</ul>
 
