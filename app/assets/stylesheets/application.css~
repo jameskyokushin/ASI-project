@@ -119,7 +119,7 @@ sidebar {
 	position: absolute;
 	display: block;
 	width: 200px;
-	background-color: purple;
+	background-color: clear;
 }
 
 sidebar {
