@@ -1,10 +1,11 @@
 ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.sendgrid.net',
+  :address        => 'smtp.gmail.com',
   :port           => '587',
   :authentication => :plain,
-  :user_name      => ENV['SENDGRID_USERNAME'],
-  :password       => ENV['SENDGRID_PASSWORD'],
-  :domain         => 'heroku.com'
+  :user_name      => 'james@kyokushin.com.ph',
+  :password       => 123456,
+  :domain         => 'http://erp-project.herokuapp.com',
+	:enable_starttls_auto => true
 }
 ActionMailer::Base.delivery_method = :smtp
 

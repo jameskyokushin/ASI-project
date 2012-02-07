@@ -2,14 +2,14 @@
 	<ul>
 		<li><%= link_to "Client Database", '#' %></li>
 		<li><%= link_to "SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>
-		<li><%= link_to "SIDEBAR SIDEBAR", '#' %></li>	
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>	
 	</ul>
 </sidebar>
