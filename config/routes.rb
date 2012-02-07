@@ -1,5 +1,6 @@
-ERP::Application.routes.draw do	
+ERP::Application.routes.draw do
+
   devise_for :users
-	match '/client', :to => "pages#client"
+	match '/clients', :to => "pages#clients"
 	root :to => "pages#home"
 end

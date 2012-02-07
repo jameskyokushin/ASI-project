@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company_name: MyString
+  contact_person: MyString
+  industry_type: MyString
+  lead_source: MyString
+  model: MyString
+  street_address: MyString
+  barangay: MyString
+  province: MyString
+  city: MyString
+  zip_code: MyString
+  mobile: MyString
+  telphone: MyString
+  fax: MyString
+  email_address: MyString
+  tin: MyString
+  vat_exemption: MyString
+  category: false
+
+two:
+  company_name: MyString
+  contact_person: MyString
+  industry_type: MyString
+  lead_source: MyString
+  model: MyString
+  street_address: MyString
+  barangay: MyString
+  province: MyString
+  city: MyString
+  zip_code: MyString
+  mobile: MyString
+  telphone: MyString
+  fax: MyString
+  email_address: MyString
+  tin: MyString
+  vat_exemption: MyString
+  category: false

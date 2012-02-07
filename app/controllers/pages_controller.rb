@@ -1,8 +1,10 @@
 class PagesController < ApplicationController
 	
   def home
+
   end
 
-	def client
+	def clients
+
 	end
 end	
