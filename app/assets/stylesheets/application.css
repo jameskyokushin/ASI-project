@@ -22,6 +22,22 @@ body {
 	color:  #666666;
 	font-size: 13px;
 }
+
+.flash {
+    padding: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-weight: bold;
+}
+#notice {
+    background: #85FF00;
+    color: black;
+}
+
+#alert {
+    background: #FF3444;
+}
+
 container {
 	width: 100%;
 	display: block;

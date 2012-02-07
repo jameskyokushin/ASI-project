@@ -20,8 +20,24 @@ body {
 	background-color: #F2F2F2;
 	font-family: Geneva, Arial, Helvetica, sans-serif;
 	color:  #666666;
-	font-size: 12px;
+	font-size: 13px;
 }
+
+.flash {
+    padding: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-weight: bold;
+}
+#notice {
+    background: #85FF00;
+    color: black;
+}
+
+#alert {
+    background: #FF3444;
+}
+
 container {
 	width: 100%;
 	display: block;
