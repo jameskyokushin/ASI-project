@@ -1,6 +1,7 @@
+<%= render "layouts/clientlink" %>
 <%= render "layouts/sidebar" %>
 <h1>ASI Welcome Pages</h1><br>
-<h3>Frequently Ask Questions</h3>
+<h3>Frequently Ask Questions</h3><br>
 
 <ul>
 	<li><%= link_to "How To DO", '#' %></li>

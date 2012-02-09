@@ -1,0 +1,9 @@
+<clients>
+<ul>
+	<li><%= link_to "Clients", '#' %></li>
+	<li><%= link_to "Sales Calls", '#' %></li>
+	<li><%= link_to "Marketing Leads", marketing_path %></li>
+	<li><%= link_to "Call Center", '#' %></li>
+</ul>
+</clients>
+<br>

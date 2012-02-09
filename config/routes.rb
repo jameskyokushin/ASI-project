@@ -1,4 +1,9 @@
 ERP::Application.routes.draw do
+  resources :marketings
+
+  resources :cities
+
+  resources :provinces
 
   resources :products
 

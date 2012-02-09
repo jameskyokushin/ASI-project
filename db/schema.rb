@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120209093104) do
+ActiveRecord::Schema.define(:version => 20120209094547) do
+
+  create_table "cities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "industries", :force => true do |t|
     t.string   "name"
@@ -25,7 +31,37 @@ ActiveRecord::Schema.define(:version => 20120209093104) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "marketings", :force => true do |t|
+    t.string   "client_name"
+    t.string   "company_name"
+    t.integer  "industry_id"
+    t.integer  "lead_id"
+    t.integer  "product_id"
+    t.string   "street"
+    t.string   "barangay"
+    t.integer  "province_id"
+    t.integer  "city_id"
+    t.string   "mobile"
+    t.string   "telephone"
+    t.string   "fax"
+    t.string   "email"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "marketings", ["city_id"], :name => "index_marketings_on_city_id"
+  add_index "marketings", ["industry_id"], :name => "index_marketings_on_industry_id"
+  add_index "marketings", ["lead_id"], :name => "index_marketings_on_lead_id"
+  add_index "marketings", ["product_id"], :name => "index_marketings_on_product_id"
+  add_index "marketings", ["province_id"], :name => "index_marketings_on_province_id"
+
   create_table "products", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "provinces", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

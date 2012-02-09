@@ -1,0 +1,4 @@
+<%= render "layouts/clientlink" %>
+<%= render "layouts/sidebar" %>
+
+<h1>INDEX</h1>
