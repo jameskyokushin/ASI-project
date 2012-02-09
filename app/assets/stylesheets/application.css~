@@ -148,6 +148,8 @@ sidebar {
 	display: block;
 	width: 200px;
 	background-color: clear;
+	border-style: none none none solid;
+	border-color: silver;
 }
 
 sidebar {
@@ -215,7 +217,7 @@ clients ul li a:visited {
   color: #09c;
 }
 
-login ul li a:hover {
+clients ul li a:hover {
   text-decoration: underline;
 }
 

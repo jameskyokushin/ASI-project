@@ -148,6 +148,9 @@ sidebar {
 	display: block;
 	width: 200px;
 	background-color: clear;
+	border-style: none none none solid;
+	border-color: silver;
+	border: 100%;
 }
 
 sidebar {
