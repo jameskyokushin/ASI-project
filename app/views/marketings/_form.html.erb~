@@ -1,0 +1,4 @@
+<%= form_for(@marketing) do |f| %>
+    <%= f.text_field :company_name %>  
+    <%= f.submit %>
+<% end %>
