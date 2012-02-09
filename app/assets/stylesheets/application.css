@@ -184,3 +184,38 @@ sidebar ul li a:hover {
   text-decoration: underline;
 }
 
+/*-- CLIENT LINKS-- */
+
+clients {
+  float: left;
+}
+
+clients {
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+clients ul {
+  margin: 0;
+  padding: 0;
+}
+
+clients ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+clients ul li a {
+  padding: 0 5px;
+  font-weight: normal;
+}
+
+clients ul li a:visited {
+  color: #09c;
+}
+
+clients ul li a:hover {
+  text-decoration: underline;
+}
+

@@ -1,6 +1,8 @@
 <sidebar>
+
 	<ul>
-		<li><%= link_to "Client Database", client_path %></li>
+		<li><%= link_to "SIDEBAR", '#' %></li>
+		<li><%= link_to "Client Database", clients_path %></li>
 		<li><%= link_to "SIDEBAR", '#' %></li>
 		<li><%= link_to "SIDEBAR", '#' %></li>
 		<li><%= link_to "SIDEBAR", '#' %></li>
