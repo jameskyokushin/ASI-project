@@ -2,9 +2,6 @@ class MarketingsController < ApplicationController
 
 
 
-	def save
-
-  end
 
 	def index
 		@marketings = Marketing.all
@@ -18,7 +15,7 @@ class MarketingsController < ApplicationController
 		@marketing = Marketing.new(params[:marketing])
 		@marketing.save
 		flash[:notice] = "Save to the Database"
-		render :action => "save"
+		render :action => "show"
 	end
 	
 	def show

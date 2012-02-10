@@ -1,0 +1,8 @@
+<%= render "layouts/clientlink" %>
+<%= render "layouts/sidebar" %>
+<br>
+<br>
+<br>
+<ul>
+	<li><%= link_to "Create New Marketing Leads", new_marketing_path %></li>
+</ul>

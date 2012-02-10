@@ -1,4 +1,7 @@
+<%= render "layouts/clientlink" %>
 <%= render "layouts/sidebar" %>
+<br>
+<br>
 <h3>Company Name:<%= @marketing.company_name %></h3>
 <h3>Client Name<%= @marketing.client_name %></h3>
 <h3>Email<%= @marketing.email %></h3>

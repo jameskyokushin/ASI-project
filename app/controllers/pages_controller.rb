@@ -7,4 +7,10 @@ class PagesController < ApplicationController
 	def clients
 
 	end
+
+	def market
+
+	end
+	
+	
 end	

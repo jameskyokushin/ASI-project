@@ -13,5 +13,6 @@ ERP::Application.routes.draw do
 
   devise_for :users
 	match '/clients', :to => "pages#clients"
+	match '/market', :to => "pages#market"
 	root :to => "pages#home"
 end

@@ -3,3 +3,4 @@
 <br>
 <br>
 <h1>New</h1>
+<%= render "form" %>

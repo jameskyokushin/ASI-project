@@ -3,9 +3,6 @@
 <br>
 <br>
 <br>
-<ul>
-	<li><%= link_to "Create New Marketing Leads", new_marketing_path %></li>
-</ul>
 
 </table>
 <table>
@@ -21,7 +18,7 @@
   <tr>
 		<td><%= marketing.company_name %></td>
     <td><%= marketing.client_name %></td>
-    <td><%= marketing.client_name %></td>
+    <td><%= marketing.email %></td>
     <td></td>
     <td></td>
   </tr>
