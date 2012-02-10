@@ -15,7 +15,7 @@ class MarketingsController < ApplicationController
 		@marketing = Marketing.new(params[:marketing])
 		@marketing.save
 		flash[:notice] = "Save to the Database"
-		render :action => "new"
+		render :action => "show"
 	end
 	
 	def show
