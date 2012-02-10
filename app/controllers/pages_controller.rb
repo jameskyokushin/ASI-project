@@ -4,12 +4,18 @@ class PagesController < ApplicationController
 
   end
 
-	def clients
+	def client
 
 	end
 
-	def market
+	def marketingleads
 
+	end
+	
+	def salescalls
+	end
+
+	def coldcalls
 	end
 	
 	

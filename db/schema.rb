@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120209094547) do
+ActiveRecord::Schema.define(:version => 20120210075103) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -66,6 +66,34 @@ ActiveRecord::Schema.define(:version => 20120209094547) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "sales", :force => true do |t|
+    t.string   "client_name"
+    t.string   "company_name"
+    t.integer  "industry_id"
+    t.integer  "lead_id"
+    t.integer  "product_id"
+    t.string   "street"
+    t.string   "barangay"
+    t.integer  "province_id"
+    t.integer  "city_id"
+    t.string   "zip_code"
+    t.string   "mobile"
+    t.string   "telephone"
+    t.string   "fax"
+    t.string   "email"
+    t.string   "tin"
+    t.string   "vat_exemption"
+    t.string   "inquiry"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "sales", ["city_id"], :name => "index_sales_on_city_id"
+  add_index "sales", ["industry_id"], :name => "index_sales_on_industry_id"
+  add_index "sales", ["lead_id"], :name => "index_sales_on_lead_id"
+  add_index "sales", ["product_id"], :name => "index_sales_on_product_id"
+  add_index "sales", ["province_id"], :name => "index_sales_on_province_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
