@@ -2,7 +2,28 @@
 <%= render "layouts/sidebar" %>
 <br>
 <br>
+<br>
 <ul>
 	<li><%= link_to "Create New Marketing Leads", new_marketing_path %></li>
-	<li><%= link_to "List Of All Marketing Leads", '#' %></li>
 </ul>
+
+</table>
+<table>
+  <tr>
+		<th>Company Name</th>
+    <th>Client Name</th>
+    <th>Email Address</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @marketings.each do |marketing| %>
+  <tr>
+		<td><%= marketing.company_name %></td>
+    <td><%= marketing.client_name %></td>
+    <td><%= marketing.email %></td>
+    <td></td>
+    <td></td>
+  </tr>
+<% end %>
+</table>

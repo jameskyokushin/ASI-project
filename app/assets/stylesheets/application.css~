@@ -28,14 +28,18 @@ body {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     font-weight: bold;
+		font-size: 12px;
+		width: 200px;
 }
 #notice {
-    background: #85FF00;
-    color: black;
+    color: #85FF00;
+		width: 200px;
 }
 
 #alert {
-    background: #FF3444;
+		width: 200px;
+		color: #FF3444;
+		padding-top: 30px;
 }
 
 container {
@@ -150,6 +154,7 @@ sidebar {
 	background-color: clear;
 	border-style: none none none solid;
 	border-color: silver;
+	border: 100%;
 }
 
 sidebar {

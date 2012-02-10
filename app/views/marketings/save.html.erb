@@ -1,0 +1,10 @@
+<%= render "layouts/sidebar" %>
+<%= render "layouts/clientlink" %>
+<% flash.each do |key, value| %>
+							<div class='flash' id='<%= key %>'>
+						<%= value %>
+						</div>
+					<% end %>
+<ul>
+	<li><%= link_to "Create New Marketing Leads", new_marketing_path %></li>
+</ul>

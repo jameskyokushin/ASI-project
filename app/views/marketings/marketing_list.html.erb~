@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Client Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @marketings.each do |marketing| %>
+  <tr>
+    <td><%= marketing.client_name %></td>
+    <td><%= link_to 'Show', marketing %></td>
+    <td><%= link_to 'Destroy', marketing, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

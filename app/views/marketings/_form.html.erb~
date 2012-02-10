@@ -1,4 +1,16 @@
 <%= form_for(@marketing) do |f| %>
-    <%= f.text_field :company_name %>  
-    <%= f.submit %>
+	<p>Company Name : <%= f.text_field :company_name %></p>
+	<p>Client Name : <%= f.text_field :client_name %></p>
+	<p>Email Address : <%= f.text_field :email %></p>
+	<p>Mobile No. : <%= f.text_field :mobile %></p>
+	<p>Telephone No. : <%= f.text_field :telephone %></p>
+	<p>Fax No. : <%= f.text_field :fax %></p>
+	<p>Industry Type : <%= f.select :industry_id, Industry.all.map{ |i| [i.name, i.id] } %></p>
+	<p>Lead Source : <%= f.select :lead_id, Lead.all.map{ |l| [l.name, l.id] } %></p>
+	<p>Product Line : <%= f.select :product_id, Product.all.map{ |pl| [pl.name, pl.id] } %></p>
+	<p>Street Address : <%= f.text_field :street %></p>
+	<p>Barangay : <%= f.text_field :barangay %></p>
+	<p>City : <%= f.select  :city_id, City.all.map{ |c| [c.name, c.id] } %></p>
+	<p>Province : <%= f.select :province_id, Province.all.map{ |p| [p.name, p.id] } %></p>
+<%= f.submit "Submit" %>
 <% end %>

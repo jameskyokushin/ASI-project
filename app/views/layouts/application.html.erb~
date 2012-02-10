@@ -12,10 +12,15 @@
 		<article-container>
 			<article>
 				<div class="content">
+						<% flash.each do |key, value| %>
+							<div class='flash' id='<%= key %>'>
+						<%= value %>
+						</div>
+					<% end %>
+
 					<%= yield  %>
 				</div>
 			</article>
-				<%= render "layouts/sidebar" %>
 		</article-container>		
 </container>
 </body>
