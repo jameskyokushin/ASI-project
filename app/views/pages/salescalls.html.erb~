@@ -4,5 +4,5 @@
 <br>
 <br>
 <ul>
-	<li><%= link_to "Create New Marketing Leads", '#' %></li>
+	<li><%= link_to "Create New Salescall", new_sales_path %></li>
 </ul>
