@@ -1,0 +1,30 @@
+<%= render "layouts/clientlink" %>
+<%= render "layouts/sidebar" %>
+<br>
+<br>
+<% flash.each do |key, value| %>
+<div class='flash' id='<%= key %>'>
+<%= value %>
+</div>
+<% end %>
+
+<h3>Company Name : <%= @sale.company_name %></h3>
+<h3>Client Name : <%= @sale.client_name %></h3>
+<h3>Email Address : <%= @sale.email %></h3>
+<h3>Mobile No. : <%= @sale.mobile %></h3>
+<h3>Telephone No. : <%= @sale.telephone %></h3>
+<h3>Fax No. : <%= @sale.fax %></h3>
+<h3>Street Address : <%= @sale.street %></h3>
+<h3>Barangay : <%= @sale.barangay %></h3>
+<h3>City : <%= @sale.city.name %></h3>
+<h3>Province : <%= @sale.province.name %></h3>
+<h3>Industry Type : <%= @sale.industry.name %></h3>
+<h3>Lead Source : <%= @sale.lead.name %></h3>
+<h3>Product Line : <%= @sale.product.name %></h3>
+<h3>Tin No. : <%= @sale.tin %></h3>
+<h3>Vat Excemption : <%= @sale.vat_excemption %></h3>
+<h3>Inquiry. : <%= @sale.inquiry %></h3>
+
+
+
+
