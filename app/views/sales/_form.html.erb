@@ -1,19 +1,85 @@
 <%= form_for(@sale) do |f| %>
-	<p>Company Name : <%= f.text_field :company_name %></p>
-	<p>Client Name : <%= f.text_field :client_name %></p>
-	<p>Email Address : <%= f.text_field :email %></p>
-	<p>Mobile No. : <%= f.text_field :mobile %></p>
-	<p>Telephone No. : <%= f.text_field :telephone %></p>
-	<p>Fax No. : <%= f.text_field :fax %></p>
-	<p>Street Address : <%= f.text_field :street %></p>
-	<p>Barangay : <%= f.text_field :barangay %></p>
-	<p>City : <%= f.select  :city_id, City.all.map{ |c| [c.name, c.id] } %></p>
-	<p>Province : <%= f.select :province_id, Province.all.map{ |p| [p.name, p.id] } %></p>
-	<p>Industry Type : <%= f.select :industry_id, Industry.all.map{ |i| [i.name, i.id] } %></p>
-	<p>Lead Source : <%= f.select :lead_id, Lead.all.map{ |l| [l.name, l.id] } %></p>
-	<p>Product Line : <%= f.select :product_id, Product.all.map{ |pl| [pl.name, pl.id] } %></p>
-	<p>TIN No. :<%= f.text_field :tin %></p>
-	<p>Vat Exemption :<%= f.text_field :vat_exemption %></p>
-	<p>Inquiry :<%= f.text_field :inquiry %></p>
-<%= f.submit %>
+<table>
+	<tr>
+		<td>Company Name :</td>
+		<td> <%= f.text_field :company_name %></td>	
+	</tr>
+		<tr>
+		<td>Client Name :</td>
+		<td> <%= f.text_field :client_name %></td>	
+	</tr>
+		<tr>
+		<td>Email :</td>
+		<td> <%= f.text_field :email %></td>	
+	</tr>
+		<tr>
+		<td>Mobile :</td>
+		<td> <%= f.text_field :mobile %></td>	
+	</tr>
+		<tr>
+		<td>Telephone :</td>
+		<td> <%= f.text_field :telephone %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Fax :</td>
+		<td> <%= f.text_field :fax %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Street Address :</td>
+		<td> <%= f.text_field :street %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Barangay :</td>
+		<td> <%= f.text_field :barangay %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>City :</td>
+		<td> <%= f.select  :city_id, City.all.map{ |c| [c.name, c.id] } %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Province :</td>
+		<td> <%= f.select :province_id, Province.all.map{ |p| [p.name, p.id] } %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Industry :</td>
+		<td> <%= f.select :industry_id, Industry.all.map{ |i| [i.name, i.id] } %></td>	
+	</tr>	
+	</tr>
+		<tr>
+		<td>Lead Source :</td>
+		<td> <%= f.select :lead_id, Lead.all.map{ |l| [l.name, l.id] } %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Product Line :</td>
+		<td> <%= f.select :product_id, Product.all.map{ |pl| [pl.name, pl.id] } %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>TIN NO. :</td>
+		<td> <%= f.text_field :tin %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Vat Exemption :</td>
+		<td> <%= f.text_field :vat_exemption %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td>Inquiry :</td>
+		<td> <%= f.text_field :inquiry %></td>	
+	</tr>
+	</tr>
+		<tr>
+		<td></td>
+		<td> <%= f.submit "Submit" %></td>	
+	</tr>
+</table>
+
 <% end %>

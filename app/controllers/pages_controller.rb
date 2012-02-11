@@ -16,6 +16,7 @@ class PagesController < ApplicationController
 	end
 
 	def coldcalls
+	  @sales = Sale.all 
 	end
 	
 	

@@ -1,12 +1,5 @@
 class MarketingsController < ApplicationController
 
-
-
-
-	def index
-		@marketings = Marketing.all
-	end
-	
 	def new
  		@marketing = Marketing.new
   end

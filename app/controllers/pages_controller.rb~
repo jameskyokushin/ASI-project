@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   end
 
-	def client
+	def clientpage
 
 	end
 
@@ -16,6 +16,8 @@ class PagesController < ApplicationController
 	end
 
 	def coldcalls
+	  @sales = Sale.all 
+		@marketings = Market.all
 	end
 	
 	
