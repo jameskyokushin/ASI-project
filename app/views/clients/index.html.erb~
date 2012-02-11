@@ -1,0 +1,17 @@
+<%= render "layouts/clientlink" %>
+<%= render "layouts/sidebar" %>
+<br>
+<br>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @clients.each do |client| %>
+  <tr>
+    <td><%= client.company_name %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
