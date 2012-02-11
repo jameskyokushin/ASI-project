@@ -1,4 +1,5 @@
 ERP::Application.routes.draw do
+  resources :clients
   resources :sales
   resources :marketings
 
@@ -13,7 +14,7 @@ ERP::Application.routes.draw do
   resources :industries
 
   devise_for :users
-	match '/client', :to => "pages#client"
+	match '/clientpage', :to => "pages#clientpage"
 	match '/marketingleads', :to => "pages#marketingleads"
 	match '/salescalls', :to => "pages#salescalls"
 	match '/coldcalls', :to => "pages#coldcalls"

@@ -14,6 +14,9 @@ class PagesController < ApplicationController
 	
 	def salescalls
 	end
+
+	def coldcalls
+	end
 	
 	
 end	

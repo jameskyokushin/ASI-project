@@ -11,42 +11,57 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120210075103) do
+ActiveRecord::Schema.define(:version => 20120211054252) do
 
   create_table "cities", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string    "name"
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
   end
 
-  create_table "industries", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "leads", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "marketings", :force => true do |t|
-    t.string   "client_name"
+  create_table "clients", :force => true do |t|
     t.string   "company_name"
-    t.integer  "industry_id"
-    t.integer  "lead_id"
-    t.integer  "product_id"
-    t.string   "street"
-    t.string   "barangay"
-    t.integer  "province_id"
-    t.integer  "city_id"
+    t.string   "client_name"
+    t.string   "email"
     t.string   "mobile"
     t.string   "telephone"
     t.string   "fax"
-    t.string   "email"
+    t.string   "house"
+    t.string   "street"
+    t.string   "city"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "tin"
+  end
+
+  create_table "industries", :force => true do |t|
+    t.string    "name"
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
+  end
+
+  create_table "leads", :force => true do |t|
+    t.string    "name"
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
+  end
+
+  create_table "marketings", :force => true do |t|
+    t.string    "client_name"
+    t.string    "company_name"
+    t.integer   "industry_id"
+    t.integer   "lead_id"
+    t.integer   "product_id"
+    t.string    "street"
+    t.string    "barangay"
+    t.integer   "province_id"
+    t.integer   "city_id"
+    t.string    "mobile"
+    t.string    "telephone"
+    t.string    "fax"
+    t.string    "email"
+    t.timestamp "created_at",   :null => false
+    t.timestamp "updated_at",   :null => false
   end
 
   add_index "marketings", ["city_id"], :name => "index_marketings_on_city_id"
@@ -56,37 +71,37 @@ ActiveRecord::Schema.define(:version => 20120210075103) do
   add_index "marketings", ["province_id"], :name => "index_marketings_on_province_id"
 
   create_table "products", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string    "name"
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
   end
 
   create_table "provinces", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string    "name"
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
   end
 
   create_table "sales", :force => true do |t|
-    t.string   "client_name"
-    t.string   "company_name"
-    t.integer  "industry_id"
-    t.integer  "lead_id"
-    t.integer  "product_id"
-    t.string   "street"
-    t.string   "barangay"
-    t.integer  "province_id"
-    t.integer  "city_id"
-    t.string   "zip_code"
-    t.string   "mobile"
-    t.string   "telephone"
-    t.string   "fax"
-    t.string   "email"
-    t.string   "tin"
-    t.string   "vat_exemption"
-    t.string   "inquiry"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.string    "client_name"
+    t.string    "company_name"
+    t.integer   "industry_id"
+    t.integer   "lead_id"
+    t.integer   "product_id"
+    t.string    "street"
+    t.string    "barangay"
+    t.integer   "province_id"
+    t.integer   "city_id"
+    t.string    "zip_code"
+    t.string    "mobile"
+    t.string    "telephone"
+    t.string    "fax"
+    t.string    "email"
+    t.string    "tin"
+    t.string    "vat_exemption"
+    t.string    "inquiry"
+    t.timestamp "created_at",    :null => false
+    t.timestamp "updated_at",    :null => false
   end
 
   add_index "sales", ["city_id"], :name => "index_sales_on_city_id"
@@ -95,19 +110,41 @@ ActiveRecord::Schema.define(:version => 20120210075103) do
   add_index "sales", ["product_id"], :name => "index_sales_on_product_id"
   add_index "sales", ["province_id"], :name => "index_sales_on_province_id"
 
+  create_table "salescalls", :force => true do |t|
+    t.string    "company_name"
+    t.string    "client_name"
+    t.string    "industry_type"
+    t.string    "lead_source"
+    t.string    "model"
+    t.string    "street_address"
+    t.string    "barangay"
+    t.string    "province"
+    t.string    "city"
+    t.string    "zip_code"
+    t.string    "mobile"
+    t.string    "telephone"
+    t.string    "fax"
+    t.string    "email_address"
+    t.string    "tin"
+    t.string    "vat_exemption"
+    t.text      "inquiry"
+    t.timestamp "created_at",     :null => false
+    t.timestamp "updated_at",     :null => false
+  end
+
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                         :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                                            :null => false
-    t.datetime "updated_at",                                            :null => false
+    t.string    "email",                                 :default => "", :null => false
+    t.string    "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string    "reset_password_token"
+    t.timestamp "reset_password_sent_at"
+    t.timestamp "remember_created_at"
+    t.integer   "sign_in_count",                         :default => 0
+    t.timestamp "current_sign_in_at"
+    t.timestamp "last_sign_in_at"
+    t.string    "current_sign_in_ip"
+    t.string    "last_sign_in_ip"
+    t.timestamp "created_at",                                            :null => false
+    t.timestamp "updated_at",                                            :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

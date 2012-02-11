@@ -1,0 +1,15 @@
+<%= form_for(@client) do |f| %>
+	<p>Company Name : <%= f.text_field :company_name %></p>
+	<p>Client Name : <%= f.text_field :client_name %></p>
+	<p>Email : <%= f.text_field :email %></p>
+	<p>Contact Number : </p>
+	<p>cel : <%= f.text_field :mobile %></p>
+	<p>tel : <%= f.text_field :telephone %></p>
+	<p>fax : <%= f.text_field :fax %></p>
+	<p>Company Address : </p>
+	<p><%= f.text_field :house %></p>
+	<p><%= f.text_field :street %></p>
+	<p><%= f.text_field :city %></p>
+	<p>TIN : <%= f.text_field :tin %></p>
+<%= f.submit "Submit"  %>
+<% end %>

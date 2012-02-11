@@ -1,8 +1,8 @@
 <clients>
 <ul>
-	<li><%= link_to "Clients", client_path %></li>
+	<li><%= link_to "Clients", clientpage_path %></li>
 	<li><%= link_to "Sales Calls", salescalls_path %></li>
 	<li><%= link_to "Marketing Leads", marketingleads_path %></li>
-	<li><%= link_to "Call Center", coldcalls_path %></li>
+	<li><%= link_to "Cold Calls", coldcalls_path %></li>
 </ul>
 </clients>
