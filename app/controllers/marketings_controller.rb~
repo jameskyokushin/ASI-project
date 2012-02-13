@@ -16,5 +16,8 @@ class MarketingsController < ApplicationController
 	end
 	
 	def destroy
+		@marketing = Marketing.find(params[:id])
+		@marketing.destroy
+		flash[:alert] = "Marketing leads Deleted."
 	end
 end

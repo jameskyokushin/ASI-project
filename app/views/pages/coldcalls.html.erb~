@@ -4,25 +4,29 @@
 <br>
 <br>
 <table>
-  <tr>
+	<tr>
 		<th>Company Name</th>
-  </tr>
-<% @sales.each do |sale| %>
-  <tr>
-	<td><%= sale.company_name %></td>
-	<td><%= link_to 'view', sale %></td>
-	 <td><%= link_to 'Destroy', sale, confirm: 'Are you sure?', method: :destroy %></td>
-  </tr>
+	</tr>
+	<% @sales.each do |sale| %>
+	<tr>
+		<td><%= sale.company_name %></td>
+		<td><%= link_to 'view', sale %></td>
+		<td><%= link_to 'Destroy', sale, confirm: 'Are you sure?', method: :delete %></td>
+	</tr>
 <% end %>
 </table>
+
 <br />
+
 <table>
-  <tr>
-    <th>Company Name</th>
-  </tr>
-<% @marketings.each do |marketing| %>
-  <tr>
-    <td><%= marketing.company_name %></td>
-  </tr>
+	<tr>
+		<th>Company Name</th>
+	</tr>
+		<% @marketings.each do |marketing| %>
+	<tr>
+		<td><%= marketing.company_name %></td>
+		<td><%= link_to 'view', sale %></td>
+		<td><%= link_to 'Destroy', sale, confirm: 'Are you sure?', method: :delete %></td>
+	</tr>
 <% end %>
 </table>

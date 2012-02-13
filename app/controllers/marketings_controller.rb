@@ -18,5 +18,7 @@ class MarketingsController < ApplicationController
 	def destroy
 		@marketing = Marketing.find(params[:id])
 		@marketing.destroy
+		flash[:alert] = "Marketing leads Deleted."
+		redirect_to @marketing
 	end
 end
