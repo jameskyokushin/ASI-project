@@ -1,0 +1,9 @@
+<%= render "layouts/clientlink" %>
+<%= render "layouts/sidebar" %>
+<br>
+<br>
+<% flash.each do |key, value| %>
+<div class='flash' id='<%= key %>'>
+<%= value %>
+</div>
+<% end %>

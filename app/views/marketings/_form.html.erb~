@@ -38,7 +38,7 @@
 	</tr>
 	<tr>
 		<td>Lead Source :</td>
-		<td><%= f.select :lead_id, Lead.all.map{ |l| [l.name, l.id] } %></td>
+		<td><%= f.select :lead_id, Lead.a %></td>
 	</tr>
 	<tr>
 		<td>Product Line :</td>

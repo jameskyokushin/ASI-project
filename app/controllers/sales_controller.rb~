@@ -10,6 +10,18 @@ class SalesController < ApplicationController
 		else
 			flash[:alert] = "Sales Call Not Saved"
 			render :action => "new"
+		end
+	end
+	
+	def show 
+		@sale = Sale.find(params[:id])
+	end
+	
+	def destroy 
+		@sale = Sale.find(params[:id])
+		@sale.destroy
+		flash[:alert] = "Sales Call Deleted."
+		render :action => "" 
 	end
 	
 	

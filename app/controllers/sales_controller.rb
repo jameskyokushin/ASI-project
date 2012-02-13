@@ -13,5 +13,16 @@ class SalesController < ApplicationController
 		end
 	end
 	
+	def show 
+		@sale = Sale.find(params[:id])
+	end
+	
+	def destroy 
+		@sale = Sale.find(params[:id])
+		@sale.destroy
+		flash[:alert] = "Sales Call Deleted."
+		redirect_to @sale 
+	end
+	
 	
 end

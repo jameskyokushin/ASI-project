@@ -1,2 +1,9 @@
 class Lead < ActiveRecord::Base
+
+	def a
+		Lead.all.map{ |l| [l.name, l.id] }		
+	end
+	
+  has_many :marketing
+
 end

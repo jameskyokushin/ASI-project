@@ -1,3 +1,9 @@
 class Industry < ActiveRecord::Base
-	has_many :marketings
+	has_many :marketing
+
+	def values_for_select
+    Industries.all.map{|i| [i.name, i.id]}
+  end
 end
+
+

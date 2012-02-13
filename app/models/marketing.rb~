@@ -4,5 +4,8 @@ class Marketing < ActiveRecord::Base
   belongs_to :product
   belongs_to :province
   belongs_to :city
+	def a
+		Lead.all.map{ |l| [l.name, l.id] }		
+	end
 	
 end

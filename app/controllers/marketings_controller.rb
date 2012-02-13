@@ -14,4 +14,9 @@ class MarketingsController < ApplicationController
 	def show
 		@marketing = Marketing.find(params[:id])
 	end
+	
+	def destroy
+		@marketing = Marketing.find(params[:id])
+		@marketing.destroy
+	end
 end
