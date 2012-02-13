@@ -10,7 +10,6 @@
 	<% @sales.each do |sale| %>
 	<tr>
 		<td><%= link_to sale.company_name, sale %></td>
-		<td><%= link_to 'view', sale %></td>
 		<td><%= link_to 'Destroy', sale, confirm: 'Are you sure?', method: :delete %></td>
 	</tr>
 <% end %>
@@ -25,7 +24,7 @@
 		<% @marketings.each do |marketing| %>
 	<tr>
 		<td><%= marketing.company_name %></td>
-		<td><%= link_to 'view', marketing %></td>
+		<td><%= link_to marketing.company_name, marketing %></td>
 		<td><%= link_to 'Destroy', marketing, confirm: 'Are you sure?', method: :delete %></td>
 	</tr>
 <% end %>

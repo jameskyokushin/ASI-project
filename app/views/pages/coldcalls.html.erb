@@ -23,8 +23,7 @@
 	</tr>
 		<% @marketings.each do |marketing| %>
 	<tr>
-		<td><%= marketing.company_name %></td>
-		<td><%= link_to 'view', marketing %></td>
+		<td><%= link_to marketing.company_name, marketing %></td>
 		<td><%= link_to 'Destroy', marketing, confirm: 'Are you sure?', method: :delete %></td>
 	</tr>
 <% end %>
