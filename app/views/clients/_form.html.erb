@@ -1,15 +1,56 @@
 <%= form_for(@client) do |f| %>
-	<p>Company Name : <%= f.text_field :company_name %></p>
-	<p>Client Name : <%= f.text_field :client_name %></p>
-	<p>Email : <%= f.text_field :email %></p>
-	<p>Contact Number : </p>
-	<p>cel : <%= f.text_field :mobile %></p>
-	<p>tel : <%= f.text_field :telephone %></p>
-	<p>fax : <%= f.text_field :fax %></p>
-	<p>Company Address : </p>
-	<p><%= f.text_field :house %></p>
-	<p><%= f.text_field :street %></p>
-	<p><%= f.text_field :city %></p>
-	<p>TIN : <%= f.text_field :tin %></p>
-<%= f.submit "Submit"  %>
+<table>
+	<tr>
+		<td>Company Name :</td>
+		<td><%= f.text_field :company_name %></td>
+	</tr>
+	<tr>
+		<td>Client Name :</td>
+		<td><%= f.text_field :client_name %></td>
+	</tr>
+	<tr>
+		<td>Email :</td>
+		<td><%= f.text_field :email %></td>
+	</tr>
+	<tr>
+		<td>Contact Number :</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>cel :</td>
+		<td><%= f.text_field :mobile %></td>
+	</tr>
+	<tr>
+		<td>tel :</td>
+		<td><%= f.text_field :telephone %></td>
+	</tr>
+	<tr>
+		<td>fax :</td>
+		<td><%= f.text_field :fax %></td>
+	</tr>
+	<tr>
+		<td>Company Address :</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>bldg/flr :</td>
+		<td><%= f.text_field :house %></td>
+	</tr>
+	<tr>
+		<td>street :</td>
+		<td><%= f.text_field :street %></td>
+	</tr>
+	<tr>
+		<td>city :</td>
+		<td><%= f.text_field :city %></td>
+	</tr>
+	<tr>
+		<td>TIN No. :</td>
+		<td><%= f.text_field :tin %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><%= f.submit "Submit"  %></td>
+	</tr>
+</table>
 <% end %>
