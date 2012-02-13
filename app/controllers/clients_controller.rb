@@ -10,9 +10,12 @@ class ClientsController < ApplicationController
 
 	def create
 		@client = Client.new(params[:client])
-		@client.save
-		flash[:notice] = "Client Successfully Saved."
-		render :action => "show"
+		if @client.save
+			flash[:notice] = "Client ay na saved."
+			render :action => "show"
+		else
+			flash[:alert] = "Client hindi na saved"
+		end
 	end
 	
 	def show

@@ -28,8 +28,8 @@ body {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     font-weight: bold;
-		font-size: 12px;
-		width: 200px;
+		font-size: 14px;
+		width: 500px;
 }
 #notice {
     color: #85FF00;
