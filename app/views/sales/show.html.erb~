@@ -77,8 +77,9 @@
 		<td><%= @sale.vat_exemption %></td>	
 	</tr>
 	</tr>
-		<td>TIN No. : </td>
+		<td>Inquiry. : </td>
 		<td><%= @sale.inquiry %></td>	
 	</tr>
 </table>
+<td><%= link_to 'Destroy', sale, confirm: 'Are you sure?', method: :delete %></td>
 

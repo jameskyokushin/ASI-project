@@ -2,6 +2,11 @@
 <%= render "layouts/sidebar" %>
 <br>
 <br>
+<% flash.each do |key, value| %>
+<div class='flash' id='<%= key %>'>
+<%= value %>
+</div>
+<% end %>
 <table>
   <tr>
     <th>Name</th>
@@ -9,7 +14,7 @@
 
 <% @clients.each do |client| %>
   <tr>
-    <td><%= client.company_name %></td>
+		<td><%= link_to client.company_name, client %></td>
   </tr>
 <% end %>
 </table>
