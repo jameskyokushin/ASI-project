@@ -2,18 +2,59 @@
 <%= render "layouts/sidebar" %>
 <br>
 <br>
-<h3>Company Name:<%= @marketing.company_name %></h3>
-<h3>Client Name<%= @marketing.client_name %></h3>
-<h3>Email<%= @marketing.email %></h3>
-<h3>Mobile<%= @marketing.mobile %></h3>
-<h3>Telephone<%= @marketing.telephone %></h3>
-<h3>Fax<%= @marketing.fax %></h3>
-<h3>Industry Type<%= @marketing.industry.name %></h3>
-<h3>Lead Source<%= @marketing.lead.name %></h3>
-<h3>Product Line<%= @marketing.product.name %></h3>
-<h3>Street <%= @marketing.street %></h3>
-<h3>Barangay<%= @marketing.barangay %></h3>
-<h3>City<%= @marketing.city.name %></h3>
-<h3>Province<%= @marketing.province.name %></h3>
-
+<% flash.each do |key, value| %>
+<div class='flash' id='<%= key %>'>
+<%= value %>
+</div>
+<% end %>
+<table>
+	<tr>
+		<td>Company Name :</td>
+		<td><%= @marketing.company_name %></td>
+	</tr>
+	<tr>
+		<td>Company Address</td>
+		<td><%= @marketing.street %> <%= @marketing.barangay %> <%= @marketing.city.name %> <%= @marketing.province.name %> </td>
+	</tr>
+	<tr>
+		<td>Client Name :</td>
+		<td><%= @marketing.client_name %></td>
+	</tr>
+	<tr>
+		<td>Email :</td>
+		<td><%= @marketing.email %></td>
+	</tr>
+	<tr>
+		<td>Contact Number :</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>cel :</td>
+		<td><%= @marketing.mobile %></td>
+	</tr>
+	<tr>
+		<td>tel :</td>
+		<td><%= @marketing.telephone %></td>
+	</tr>
+	<tr>
+		<td>fax :</td>
+		<td><%= @marketing.fax %></td>
+	</tr>
+	<tr>
+		<td>Company Address</td>
+		<td><%= @marketing.street %> <%= @marketing.barangay %> <%= @marketing.city.name %> <%= @marketing.province.name %> </td>
+	</tr>
+	<tr>
+		<td>Industry Type :</td>
+		<td><%= @marketing.industry.name %></td>
+	</tr>
+	<tr>
+		<td>Lead Source :</td>
+		<td><%= @marketing.lead.name %></td>
+	</tr>
+	<tr>
+		<td>Product Line :</td>
+		<td><%= @marketing.product.name %></td>
+	</tr>
+</table>
 
