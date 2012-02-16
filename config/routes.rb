@@ -1,4 +1,6 @@
 ERP::Application.routes.draw do
+  resources :blood_types
+
   resources :genders
 
   resources :designations
