@@ -1,4 +1,6 @@
 ERP::Application.routes.draw do
+  resources :branches
+
   resources :clients
   resources :sales
   resources :marketings
