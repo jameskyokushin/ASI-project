@@ -8,78 +8,62 @@
 </div>
 <% end %>
 <table>
-	</tr>
+	<tr>
 		<td>Company Name :</td>
 		<td><%= @sale.company_name %></td>	
 	</tr>
+	<tr>
+		<td>Company Address :</td>
+		<td><%= @sale.street %><%= @sale.barangay %> <%= @sale.barangay %> <%= @sale.province.name %></td>	
 	</tr>
+	<tr>
 		<td>Client Name :</td>
 		<td><%= @sale.telephone %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>Email :</td>
 		<td><%= @sale.email %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>Contact Number :</td>
-		<td></td>	
+		<td><%= @sale.mobile %><%= @sale.telephone %><%= @sale.fax %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>mobile.</td>
 		<td><%= @sale.mobile %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>tel.</td>
 		<td><%= @sale.telephone %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>fax.</td>
 		<td><%= @sale.fax %></td>	
 	</tr>
-	</tr>
-		<td>Address :</td>
-		<td></td>	
-	</tr>
-	</tr>
-		<td>house no. </td>
-		<td><%= @sale.street %></td>	
-	</tr>
-	</tr>
-		<td>brgy. </td>
-		<td><%= @sale.barangay %></td>	
-	</tr>
-	</tr>
-		<td>city. </td>
-		<td><%= @sale.city.name %></td>	
-	</tr>
-	</tr>
-		<td>province. </td>
-		<td><%= @sale.province.name %></td>	
-	</tr>
-	</tr>
+	
+	<tr>
 		<td>Industry Type : </td>
 		<td><%= @sale.industry.name %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>Lead Source : </td>
 		<td><%= @sale.lead.name %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>Product Line : </td>
 		<td><%= @sale.product.name %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>TIN No. : </td>
 		<td><%= @sale.tin %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>Vat Exemption. : </td>
 		<td><%= @sale.vat_exemption %></td>	
 	</tr>
-	</tr>
+	<tr>
 		<td>Inquiry. : </td>
 		<td><%= @sale.inquiry %></td>	
 	</tr>
 </table>
-<td><%= link_to 'Destroy', sale, confirm: 'Are you sure?', method: :delete %></td>
 

@@ -15,6 +15,7 @@ class ClientsController < ApplicationController
 			render :action => "show"
 		else
 			flash[:alert] = "Client hindi na saved"
+			render :action => "new"
 		end
 	end
 	

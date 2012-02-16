@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.0'
+gem 'rails', '3.2.1'
 
 group :development, :test do
   gem "sqlite3"
-	gem 'rspec-rails', '~> 2.5'
+  gem 'rspec-rails', '~> 2.5'
 end
 
 group :production do
@@ -22,8 +22,8 @@ end
 gem 'jquery-rails'
 
 group :test do
-	gem 'cucumber-rails'
-	gem 'capybara'
-	gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
