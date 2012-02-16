@@ -1,4 +1,6 @@
 ERP::Application.routes.draw do
+  resources :religions
+
   resources :nationalities
 
   resources :blood_types
