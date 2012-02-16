@@ -1,4 +1,6 @@
 ERP::Application.routes.draw do
+  resources :civil_statuses
+
   resources :religions
 
   resources :nationalities

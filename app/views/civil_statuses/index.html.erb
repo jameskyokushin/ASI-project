@@ -1,0 +1,23 @@
+<h1>Listing civil_statuses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @civil_statuses.each do |civil_status| %>
+  <tr>
+    <td><%= civil_status.name %></td>
+    <td><%= link_to 'Show', civil_status %></td>
+    <td><%= link_to 'Edit', edit_civil_status_path(civil_status) %></td>
+    <td><%= link_to 'Destroy', civil_status, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Civil status', new_civil_status_path %>
