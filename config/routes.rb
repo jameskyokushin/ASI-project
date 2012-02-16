@@ -1,4 +1,6 @@
 ERP::Application.routes.draw do
+  resources :genders
+
   resources :designations
 
   resources :departments
